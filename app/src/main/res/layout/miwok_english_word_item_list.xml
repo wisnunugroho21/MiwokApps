@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_menu_layout_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#8800A0"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_category_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#fff7da"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/color_red" />
+
+    <TextView
+        android:id="@+id/english_word_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/miwok_word_tv"
+        app:layout_constraintLeft_toRightOf="@+id/item_category_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Red" />
+
+    <TextView
+        android:id="@+id/miwok_word_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/english_word_tv"
+        app:layout_constraintTop_toBottomOf="@+id/english_word_tv"
+        tools:text="wetetti" />
+</android.support.constraint.ConstraintLayout>
